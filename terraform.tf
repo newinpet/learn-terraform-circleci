@@ -1,5 +1,12 @@
 terraform {
-  cloud {}
+  cloud {
+    organization = "EnPnM"
+
+    workspaces {
+      name = "learn-terraform-circleci"
+    }
+  }
+  
 
   required_providers {
     aws = {
